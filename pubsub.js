@@ -3,9 +3,7 @@ const HOST = 'localhost';
 
 var express = require('express');
 
-var app = module.exports = express();
-
-app.use(express.staticProvider(__dirname + '/public'));
+var app = express();
 
 const redis = require('redis');
 const client = redis.createClient();
