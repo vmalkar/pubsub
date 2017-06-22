@@ -3,7 +3,7 @@ const HOST = 'localhost';
 
 var express = require('express');
 
-var app = module.exports = express();
+var app = module.exports = server;
 
 const redis = require('redis');
 const client = redis.createClient();
