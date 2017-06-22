@@ -3,7 +3,7 @@ const HOST = 'localhost';
 
 var express = require('express');
 
-var app = module.exports = express.createServer();
+var app = module.exports = express();
 
 app.use(express.staticProvider(__dirname + '/public'));
 
